@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simon plays</title>
+        <style>
+        
+            body {
+                text-align: center;
+                font-family: poppins;
+            }
+
+            .btn {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                border-radius: 20%;
+                margin: 10px;
+                transition: all .25s ease;
+            }
+
+
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .yellow {
+                background-color: #f99b14;
+            }
+
+            .red {
+                background-color: #d95980;
+            }
+
+            .purple {
+                background-color: #819ff9;
+            }
+
+            .green {
+                background-color: #63aac0;
+            }
+
+            .flash {
+                background-color: white;
+                transform: scale(1.05);
+                box-shadow: 0px 0px 50px white;
+            }
+            h1{
+                line-height: 0;
+                padding: 0;
+                margin-top: 50px;
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>SIMON SAYS </h1>
+        <p class="below">
+            follows the clicks as per computer and score the highest
+        </p>
+        <br>
+        <h3>Press any key to continue</h3>
+
+        <div class="container">
+
+            <div class="first-line">
+                <div class="btn red " id ="red" type="button"></div>
+                <div class="btn yellow " id ="yellow" type="button"></div>
+            </div>
+
+            <div class="first-line">
+                <div class="btn green " id ="green" type="button"></div>
+                <div class="btn purple " id ="purple" type="button"></div>
+            </div>
+
+        </div>
+
+        <div>
+            <h2>High Score : 0 </h2>
+            
+        </div>
+
+        <script src="simon.js"></script>
+    </body>
+
+    </html>
